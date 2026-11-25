@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shyamkumar Nahate – Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Shyamkumar Nahate, full-stack developer (React, Node.js, TypeScript, Python, SQL) and final-year E&TC student at PCCOE Pune.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF1F5; --ink:#15222E; --muted:#475766; --line:#C2CDD8; --accent:#0B6E73; --hot:#B5601B;
+  --head:"Bricolage Grotesque","Segoe UI",Helvetica,Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1B26; --ink:#E7EDF3; --muted:#9FB0BF; --line:#2B3C4B; --accent:#5CC8CC; --hot:#E8934A;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1B26; --ink:#E7EDF3; --muted:#9FB0BF; --line:#2B3C4B; --accent:#5CC8CC; --hot:#E8934A;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65}
+main{max-width:50rem;margin:0 auto;padding:3.5rem 1.25rem 4rem}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,7vw,3.9rem);font-weight:700;letter-spacing:-.02em}
+h2{font-size:1.5rem;font-weight:700;margin-bottom:1rem}
+h3{font-size:1.2rem;font-weight:500}
+p{margin:.5rem 0;max-width:65ch}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+section{margin-top:3.5rem}
+.lede{font-size:1.25rem;margin-top:1rem;max-width:34ch}
+.sub{color:var(--muted)}
+.links{margin-top:1rem}
+.links a{display:inline-block;margin:.25rem 1.25rem .25rem 0;font-family:var(--head);font-weight:500;font-size:1.1rem}
+.now{margin-top:2rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1rem 0}
+.now strong{font-family:var(--head);color:var(--hot);font-size:1.05rem}
+.proj{border-top:1px solid var(--line);padding:1.25rem 0 1.25rem 1rem;border-left:3px solid var(--accent);margin-bottom:1rem}
+.proj .tech{color:var(--muted);font-size:.95rem;margin:.15rem 0 .5rem}
+ul{margin:.5rem 0;padding-left:1.2rem}
+li{margin:.3rem 0;max-width:65ch}
+.badge{font-family:var(--head);font-weight:700;color:var(--hot)}
+.row{display:grid;grid-template-columns:11rem 1fr;gap:.25rem 1.5rem;padding:.9rem 0;border-top:1px solid var(--line)}
+.row dt{font-family:var(--head);font-weight:500}
+.row dd{margin:0}
+.when{color:var(--muted);font-size:.95rem}
+dl{margin:0}
+@media (max-width:40rem){.row{grid-template-columns:1fr}}
+footer{margin-top:4rem;border-top:1px solid var(--line);padding-top:1rem;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Shyamkumar Nahate</h1>
+    <p class="lede">I build full-stack apps in React, Node.js and Python, backed by SQL.</p>
+    <p class="sub">Final-year E&amp;TC student at PCCOE, Pune. Top 5 at DIPEX 2025 out of 496 projects.</p>
+    <p class="links">
+      <a href="https://github.com/Shyam06040" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/shyamkumar-nahate" rel="noopener">LinkedIn</a>
+      <a href="mailto:shyamnahate2@gmail.com">Email</a>
+    </p>
+    <div class="now">
+      <strong>Currently building</strong>
+      <p>My capstone: a restaurant platform that takes orders by voice and handles billing, ERP and inventory, with a React frontend and a Python REST API.</p>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="proj">
+      <h3>AI-Powered Smart Restaurant Automation System</h3>
+      <p class="tech">Built with React, Node.js, FastAPI/Flask and SQL. Capstone project, in progress.</p>
+      <ul>
+        <li>A full-stack platform for voice ordering, billing, ERP and inventory management, with a React frontend and a Python REST API backend.</li>
+        <li>SQL data models for orders, billing and stock, exposed through REST endpoints.</li>
+        <li>Voice ordering that turns speech into structured orders the backend can process.</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h3>AI-Based Black Box System for Vehicles</h3>
+      <p class="tech">Built with Python, ML and GPS/GSM</p>
+      <ul>
+        <li>An IoT dashboard for continuous vehicle monitoring and secure data access, backed by a tamper-proof data logging system.</li>
+        <li>Records speed, location, video and driver actions. Adds AI-based drowsiness and alcohol detection and real-time crash alerts with GPS location sent to emergency contacts.</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h3>Landspy Guard: Defence Surveillance Vehicle</h3>
+      <p class="tech">Built with ESP32, HTTP servers and WiFi</p>
+      <p><span class="badge">Top 5 at DIPEX 2025.</span> Selected from 496 projects in the Defence and Cyber Security domain and presented before the Chief Minister of Maharashtra.</p>
+      <ul>
+        <li>A distributed system of four ESP32 units, each running its own HTTP web server, with live camera streaming and GPS tracking viewable over WiFi.</li>
+        <li>Detects WiFi deauthentication attacks for the Defence and Cyber Security domain.</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h3>Paralysis Patient Healthcare System</h3>
+      <p class="tech">Built with ESP32 and IoT</p>
+      <ul>
+        <li>IoT patient-monitoring firmware that sends real-time vitals wirelessly to a monitoring interface.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl>
+      <div class="row"><dt>Languages</dt><dd>JavaScript, TypeScript, Python, Java, C, C++, HTML/CSS.</dd></div>
+      <div class="row"><dt>Frontend and backend</dt><dd>React.js, Node.js, Flask, FastAPI, RESTful API design, HTTP web servers.</dd></div>
+      <div class="row"><dt>Databases</dt><dd>SQL, with schema design for orders, billing and inventory.</dd></div>
+      <div class="row"><dt>Tools and fundamentals</dt><dd>scikit-learn, Linux command line, shell scripting, data structures (arrays, linked lists, stacks, queues, trees).</dd></div>
+      <div class="row"><dt>Hardware and IoT</dt><dd>ESP32, STM32 and sensor integration over UART, I2C and SPI, for projects that feed data into web interfaces.</dd></div>
+    </dl>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <dl>
+      <div class="row"><dt>STM32 Embedded Systems Trainer<br><span class="when">ElectroNova Pvt Ltd, 2025</span></dt><dd>Trained two student batches at PCCOE, designed the training modules and debugged student code live, which built strong technical communication.</dd></div>
+      <div class="row"><dt>Testing and QA<br><span class="when">Rajani Electricals Pvt. Ltd., 2023</span></dt><dd>Tested transformer assemblies against safety and quality standards and wrote structured defect reports for root-cause analysis.</dd></div>
+    </dl>
+  </section>
+
+  <section id="recognition">
+    <h2>Achievements and certificate</h2>
+    <dl>
+      <div class="row"><dt>Udemy<br><span class="when">Jul 2025</span></dt><dd>The Web Developer Bootcamp 2025, 74 hours, by Colt Steele. <a href="https://ude.my/UC-4a53efbb-7359-4c4b-9a23-ebb7bdf920a7" rel="noopener">Verify certificate</a></dd></div>
+      <div class="row"><dt>Top 5<br><span class="when">DIPEX 2025</span></dt><dd>Defence and Cyber Security domain, out of 496 projects.</dd></div>
+      <div class="row"><dt>Winner<br><span class="when">Utkarsh 2025</span></dt><dd>National level hackathon, placed in the top 5.</dd></div>
+      <div class="row"><dt>Winner<br><span class="when">HackFusion 2026</span></dt><dd>International hackathon at SPIT, placed in the top 10.</dd></div>
+    </dl>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <dl>
+      <div class="row"><dt>B.Tech, E&amp;TC<br><span class="when">2024–2027</span></dt><dd>Pimpri Chinchwad College of Engineering, Pune. CGPA 7.7.</dd></div>
+      <div class="row"><dt>Diploma, E&amp;TC<br><span class="when">2022–2024</span></dt><dd>Government Polytechnic, Amravati. 90.68%.</dd></div>
+      <div class="row"><dt>12th, MSBSHSE<br><span class="when">2020–2021</span></dt><dd>Shri R.L.T. College of Science. 92.17%.</dd></div>
+      <div class="row"><dt>10th, MSBSHSE<br><span class="when">2018–2019</span></dt><dd>Dr. Hedgewar School, Akola. 89%.</dd></div>
+    </dl>
+  </section>
+
+  <footer id="contact">
+    <h2>Get in touch</h2>
+    <p>I’m looking for software and full-stack roles. Email is the quickest way to reach me.</p>
+    <p class="links">
+      <a href="mailto:shyamnahate2@gmail.com">shyamnahate2@gmail.com</a>
+      <a href="https://linkedin.com/in/shyamkumar-nahate" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Shyam06040" rel="noopener">GitHub</a>
+    </p>
+    <p>Based in Pune, Maharashtra.</p>
+  </footer>
+</main>
+</body>
+</html>
